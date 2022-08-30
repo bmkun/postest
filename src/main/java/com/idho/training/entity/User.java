@@ -1,5 +1,7 @@
 package com.idho.training.entity;
 
+import lombok.Data;
+
 import javax.persistence.*;
 
 /**
@@ -7,6 +9,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "User")
+@Data
 public class User {
 
     @Id
