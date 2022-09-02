@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequestMapping("/api/postest")
-@Slf4j
 public class User {
 
     @Autowired
@@ -19,12 +18,11 @@ public class User {
 
     @GetMapping("/getdata")
     public String showData() {
-        return "anjay";
+        return "belom jadi";
     }
 
     @PostMapping("/savedata")
     public String saveData(@RequestBody UserDto userDto) {
-//        log.info("== DTO : {}", userDto);
         userService.simpan(userDto);
         return "input berhasil";
     }

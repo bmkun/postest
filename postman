@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "bf442188-9d66-4aee-96ad-327e7d47d0c1",
+		"name": "postest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "savedata",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 4,\r\n    \"username\":\"gopar\",\r\n    \"password\":\"kurobalap\",\r\n    \"isActive\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/postest/savedata",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"postest",
+						"savedata"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
